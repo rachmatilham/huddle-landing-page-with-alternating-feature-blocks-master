@@ -1,0 +1,493 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+main header {
+  background-color: var(--very-pale-cyan);
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+nav {
+  padding: 24px 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 105px;
+}
+nav button {
+  width: 96px;
+  height: 24px;
+  border-radius: 12px;
+  border: 0;
+  background-color: white;
+  color: var(--very-dark-cyan);
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.55em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+nav button:hover {
+  cursor: pointer;
+  color: var(--grayish-blue);
+}
+
+.intro {
+  text-align: center;
+  padding: 80px 37px 30px;
+  color: var(--very-dark-cyan);
+}
+.intro h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+}
+.intro p {
+  margin-top: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.87em;
+  line-height: 1.5;
+}
+.intro button {
+  margin-top: 33px;
+  width: 240px;
+  height: 42px;
+  border-radius: 21px;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  background-color: var(--pink);
+  color: white;
+}
+.intro button:hover {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 80%);
+}
+.intro img.mock-up {
+  margin-top: 52px;
+  width: 100%;
+}
+
+article {
+  padding: 20px 20px;
+  text-align: center;
+}
+article h2 {
+  margin-top: 53px;
+  font-family: "Poppins", sans-serif;
+  color: var(--very-dark-cyan);
+  font-size: 1.1em;
+}
+article p {
+  margin-top: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--grayish-blue);
+  font-size: 0.78em;
+  line-height: 1.5;
+}
+.feature-container {
+  width: 100%;
+  margin: 40px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.grow-together .feature-container {
+  padding: 54px 40px 31px;
+}
+.grow-together img {
+  width: 237px;
+}
+.flowing-conversations .feature-container {
+  padding: 67px 40px 54px;
+}
+.flowing-conversations img {
+  padding-bottom: 10px;
+  width: 243px;
+}
+.your-users .feature-container {
+  padding: 64px 47px 33px;
+}
+.your-users img {
+  padding-bottom: 3px;
+  width: 241px;
+}
+.your-users p {
+  margin-top: 13px;
+}
+
+section.call-to-action {
+  padding: 0 12px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: -7px;
+}
+.cta-container {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 45px 0 40px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+section.call-to-action h2 {
+  color: var(--very-dark-cyan);
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+section.call-to-action button {
+  margin-top: 23px;
+  width: 200px;
+  height: 42px;
+  border-radius: 21px;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.55em;
+  background-color: var(--pink);
+  color: white;
+}
+section.call-to-action button:hover {
+  cursor: pointer;
+  background-color: hsl(322, 100%, 80%);
+}
+
+main footer {
+  background-color: var(--very-dark-cyan);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 140px 15px 33px;
+  padding-right: 20px;
+}
+main footer p {
+  font-size: 0.89em;
+}
+footer .logo {
+  -webkit-mask: url(./images/logo.svg) no-repeat center;
+  mask: url(./images/logo.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 167px;
+  height: 29px;
+  background-color: white;
+}
+footer .location {
+  display: flex;
+  margin-top: 23px;
+}
+footer .location img {
+  margin-top: 7px;
+  width: 14px;
+  height: 17px;
+}
+footer .location p {
+  margin-left: 29px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+footer .phone {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-left: 4px;
+}
+footer .phone img {
+  width: 18px;
+  height: 18px;
+}
+footer .phone p {
+  margin-left: 21px;
+}
+footer .email {
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  margin-left: 3px;
+}
+footer .email img {
+  width: 20px;
+  height: 16px;
+}
+footer .email p {
+  margin-left: 18px;
+  font-size: 0.87em;
+}
+footer .about-us {
+  margin-top: 56px;
+}
+footer li {
+  margin-top: 20px;
+  list-style-type: none;
+}
+footer .career li {
+  margin-top: 19px;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover {
+  text-decoration: underline;
+}
+
+footer .icon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 54px;
+}
+footer .icon a {
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 6px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+}
+footer .icon svg {
+  height: 100%;
+}
+footer .icon a:hover {
+  fill: var(--pink);
+  border: 1px solid var(--pink);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0px none;
+  padding: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
+
+footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.67em;
+}
+
+.attribution {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 992px) {
+  main header {
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+
+  nav {
+    padding: 48px 80px 0;
+  }
+  nav img {
+    width: 200px;
+  }
+  nav button {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 0.8em;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 80px;
+  }
+  .intro .text-container {
+    text-align: left;
+    width: 40%;
+    align-self: center;
+  }
+  .intro h1 {
+    margin-top: 7px;
+    font-size: 2.2em;
+  }
+  .intro p {
+    margin-top: 28px;
+    font-size: 1em;
+  }
+  .intro button {
+    margin-top: 35px;
+    width: 280px;
+    height: 58px;
+    border-radius: 29px;
+    font-size: 0.78em;
+  }
+  .intro img.mock-up {
+    margin-top: 0;
+    padding-right: 5px;
+    width: 54.4%;
+    height: max-content;
+  }
+
+  article {
+    padding: 118px 103px;
+  }
+  article h2 {
+    margin-top: 0;
+    font-size: 1.6em;
+  }
+  article p {
+    font-size: 1em;
+  }
+  .feature-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .feature-text {
+    text-align: left;
+    align-self: center;
+  }
+
+  .grow-together .feature-container {
+    padding: 54px 120px;
+    padding-right: 35px;
+  }
+  .grow-together .feature-text {
+    margin-top: 10px;
+    order: 1;
+    width: 45%;
+  }
+  .grow-together img {
+    order: 2;
+    width: 37.5%;
+    padding: 0;
+  }
+  .flowing-conversations .feature-container {
+    padding: 73px 120px;
+    padding-right: 31px;
+  }
+  .flowing-conversations img {
+    width: 38.5%;
+    padding: 0;
+  }
+  .flowing-conversations .feature-text {
+    width: 46.1%;
+  }
+  .your-users .feature-container {
+    padding: 60px 120px;
+    padding-right: 27px;
+  }
+  .your-users .feature-text {
+    order: 1;
+    width: 44%;
+  }
+  .your-users img {
+    order: 2;
+    width: 38.8%;
+  }
+
+  section.call-to-action {
+    padding: 0;
+    width: 800px;
+    margin-bottom: -95px;
+  }
+  .cta-container {
+    top: 0;
+    padding: 65px 0 50px;
+  }
+  section.call-to-action h2 {
+    font-size: 1.76em;
+  }
+  section.call-to-action button {
+    margin-top: 36px;
+    width: 50%;
+    max-width: 400px;
+    height: 82px;
+    border-radius: 41px;
+    font-size: 1.1em;
+  }
+
+  main footer {
+    padding: 190px 120px 47px;
+    padding-right: 80px;
+    display: grid;
+    grid-template-areas:
+      "logo logo logo logo"
+      "location about-us career icon"
+      "copyright copyright copyright copyright";
+    row-gap: 42px;
+    justify-content: space-between;
+    -ms-grid-columns: 30% 12.7% 11.1% 260px;
+    grid-template-columns: 30% 12.7% 11.1% 260px;
+  }
+  footer .logo {
+    grid-area: logo;
+    width: 220px;
+    height: 36px;
+  }
+  footer .location {
+    grid-area: location;
+    margin-top: 0;
+  }
+  footer .email {
+    margin-top: 24px;
+  }
+  footer .about-us {
+    grid-area: about-us;
+    position: relative;
+    left: 32px;
+    margin-top: 0;
+  }
+  footer .about-us li {
+    margin-top: 19px;
+  }
+  footer .about-us li:first-child {
+    margin-top: 0;
+  }
+  footer .career {
+    grid-area: career;
+    position: relative;
+    right: 5px;
+  }
+  footer .career li:first-child {
+    margin-top: 0;
+  }
+  footer .icon {
+    grid-area: icon;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 0;
+    width: 120px;
+  }
+  footer .icon a {
+    margin: 0;
+  }
+  footer .copyright {
+    grid-area: copyright;
+    margin-top: 0;
+    text-align: right;
+    font-size: 0.72em;
+  }
+}
