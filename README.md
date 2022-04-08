@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page on Frontend Mentor]()
+- Solution URL: [Solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-HJh6Li675)
 - Live Site URL: [Github Pages](https://rachmatilham.github.io/huddle-landing-page-with-alternating-feature-blocks-master/)
 
 ## My process
